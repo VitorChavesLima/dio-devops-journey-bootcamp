@@ -87,3 +87,21 @@ if (grep -q -E "rogerio" /etc/passwd) then
     echo "  - Removing user: rogerio";
     userdel rogerio;
 fi
+
+echo "Creating folders"
+
+echo "  - Creating /publico folder"
+mkdir /publico
+chmod 777 /publico
+
+echo "  - Creating /adm folder"
+mkdir /adm
+chmod 770 /adm
+
+echo "  - Creating /ven folder"
+mkdir /ven
+chmod 770 /ven
+
+echo "  - Creating /sec folder"
+mkdir /sec
+chmod 770 /sec
